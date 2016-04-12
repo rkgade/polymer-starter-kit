@@ -16,7 +16,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="generator" content="Polymer Starter Kit">
-  <title>Polymer Starter Kit</title>
+  <title>Polymer Starter Kit By RK</title>
 
   <!-- Place favicon.ico in the `app/` directory -->
 
@@ -91,6 +91,19 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <iron-icon icon="mail"></iron-icon>
             <span>Contact</span>
           </a>
+          <!-- Added for Date Demo -->
+          <a data-route="date-picker" href="{{baseUrl}}date-picker">
+            <iron-icon icon="perm-contact-calendar"></iron-icon>
+            <span>Date</span>
+          </a>
+          <!-- Demo Date Ends here -->
+
+          <!-- Adding for Books Demo -->
+          <a data-route="books" href="{{baseUrl}}books">
+            <iron-icon icon="book"></iron-icon>
+            <span>Books</span>
+          </a>
+          <!-- Books Demo Ends Here -->
         </paper-menu>
       </paper-scroll-header-panel>
 
@@ -116,6 +129,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <!-- Main Content -->
         <div class="content">
           <iron-pages attr-for-selected="data-route" selected="{{route}}">
+            <section data-route="date-picker">
+              <paper-material elevation="1">
+                <p>
+                   This is demo
+                </p>
+                <paper-date-picker></paper-date-picker>
+              </paper-material>
+            </section>
             <section data-route="home">
               <paper-material elevation="1">
                 <my-greeting class="focus-target" tabindex="-1"></my-greeting>
@@ -172,6 +193,15 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
               <paper-material elevation="1">
                 <h1 class="page-title focus-target" tabindex="-1">Contact</h1>
                 <p>This is the contact section</p>
+              </paper-material>
+            </section>
+
+            <!-- Books Demo Section -->
+            <section data-route="books">
+              <paper-material elevation="1">
+                <p>
+                   Hello World!
+                </p>
               </paper-material>
             </section>
           </iron-pages>

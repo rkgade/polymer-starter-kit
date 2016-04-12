@@ -27,7 +27,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <h1 class="page-title" tabindex="-1">{{greeting}}</h1>
     <label for="greeting-input">Update text to change the greeting.</label>
     <!-- Listens for "input" event and sets greeting to <input>.value -->
-    <input id="greeting-input" value="{{greeting::input}}">
+    <input id="greeting-input1" value="{{greeting::input}}">
   </template>
 
   <script>
@@ -40,7 +40,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         properties: {
           greeting: {
             type: String,
-            value: 'Welcome!',
+            value: 'Hola!',
             notify: true
           }
         }
